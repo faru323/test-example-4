@@ -1,0 +1,157 @@
+.navbar {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(52, 54, 63, 0.8),
+      rgba(52, 54, 63, 0.8)
+    ),
+    url("https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp");
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &__middle {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 50px;
+        list-style: none;
+        li {
+          color: white;
+          font-size: 18px;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(97%);
+          }
+          .link {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &__btn {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        background: #7971ea;
+        font-weight: 600;
+        transition: 0.3s;
+        &:hover {
+          background-color: #0f44a7;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      flex-direction: row;
+
+      height: 600px;
+
+      &__left {
+        width: 40%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        row-gap: 20px;
+        h1 {
+          color: white;
+        }
+        p {
+          color: rgb(163, 163, 163);
+        }
+        button {
+          width: 200px;
+          padding: 0px 10px;
+          border-radius: 20px;
+          border: none;
+          background-color: #7971ea;
+          transition: 0.3s;
+          color: white;
+          font-weight: 600;
+          height: 40px;
+          &:hover {
+            background-color: #0f44a7;
+          }
+        }
+      }
+      &__right {
+        width: 55%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .signup {
+          width: 70%;
+          height: 400px;
+          background-color: white;
+          border-radius: 10px;
+          padding: 30px 50px;
+          line-height: 4;
+          p {
+            color: black;
+            font-size: x-large;
+          }
+          form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 20px;
+            input {
+              padding: 0px 10px;
+              width: 350px;
+              height: 40px;
+              &:focus {
+                outline: none;
+                border: 1px solid #7971ea;
+              }
+            }
+            button{
+                width: 100px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                background-color: #7971ea;
+                color: white    ;
+                transition: 0.3s;
+                &:hover{
+                    background-color: #0f44a7;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
